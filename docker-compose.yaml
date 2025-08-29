@@ -1,0 +1,9 @@
+services:
+  cursor-web:
+    build:
+      context: https://github.com/alxdolphin/cursor-web.git
+      dockerfile: Dockerfile
+    image: alxdolphin/cursor-web:latest
+    ports:
+      - "8050:8080"
+    restart: unless-stopped
